@@ -5,7 +5,7 @@ var Buffer = require('buffer');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-    var buff = fs.readFileSync('index.html','encoding')
+    var buff = fs.readFileSync('index.html')
     response.send(buff.toString('utf-8'));
 });
 
